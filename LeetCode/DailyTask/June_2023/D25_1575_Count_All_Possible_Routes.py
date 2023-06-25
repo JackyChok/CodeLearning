@@ -19,9 +19,9 @@ class Solution(object):
                 if curr_loc != next_loc:
                     cost = abs(locations[curr_loc] - locations[next_loc])
                     res += dfs(next_loc, rem_fuel - cost)
-            return res
+            return res % 1000000007
 
-        return dfs(start, fuel)
+        return dfs(start, fuel) 
     
 # Test Case 1
 locations = [2, 3, 6, 8, 4]
@@ -38,8 +38,8 @@ fuel = 6
 print(Solution().countRoutes(locations, start, finish, fuel))
 
 # Test Case 2
-locations = [5, 2, 1]
+locations = [1,2,3]
 start = 0
 finish = 2
-fuel = 3
+fuel = 40
 print(Solution().countRoutes(locations, start, finish, fuel)) 
