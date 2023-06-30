@@ -1,6 +1,7 @@
 from collections import deque, defaultdict
 
 class Solution(object):
+    # Modified DFS
     def shortestPathAllKeys(self, grid):
         """
         :type grid: List[str]

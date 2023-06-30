@@ -1,4 +1,5 @@
 class Solution(object):
+    # Binary Search + BFS
     def latestDayToCross(self, row, col, cells):
         """
         :type row: int
